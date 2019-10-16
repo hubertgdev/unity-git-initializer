@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unity Git Initializer</title>
+  <link rel="stylesheet" href="../assets/design.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1 class="title">Unity Git Initializer</h1>
+    </header>
+
+    <div id="messages-container" class="block">
+      <ul id="messages"></ul>
+    </div>
+
+    <div class="block">
+      <form id="form" method="post">
+
+        <div class="field-container field">
+          <label for="path">Path to Unity Project</label>
+          <div class="input">
+            <input type="text" class="field" name="path" id="path" required>
+            <input type="file" id="select-folder" webkitdirectory mozdirectory msdirectory odirectory directory hidden>
+            <input type="button" class="button" id="browse" value="Browse...">
+          </div>
+        </div>
+
+        <div class="field-container field">
+          <label for="url">Git repository URL</label>
+          <div class="input">
+            <input type="text" class="field" name="url" id="url">
+          </div>
+        </div>
+
+        <div class="field-container field">
+          <label for="lfs">Use Git LFS ?</label>
+          <div class="input">
+            <input type="checkbox" name="lfs" id="lfs">
+          </div>
+        </div>
+
+        <div class="field-container field">
+          <label for="commit">First commit message</label>
+          <div class="input">
+            <input type="text" class="field" name="commit" id="commit" value="Init project" required>
+          </div>
+        </div>
+
+        <div class="field-container">
+          <input type="submit" class="button main-button" value="Initialize">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <div id="popup">
+    <div class="popup-container">
+      <h2 class="title">Initializing project...</h2>
+      <div class="popup-content">
+        <progress id="progress-bar" max="100" value="0"></progress>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/messages-manager.js"></script>
+  <script src="../scripts/progress-manager.js"></script>
+  <script src="../scripts/form.js"></script>
+</body>
+
+</html>

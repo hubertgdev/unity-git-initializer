@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', 'Futura', 'Trebuchet MS', sans-serif;
+  background: rgb(252, 252, 252);
+}
+
+.title {
+  background: #49599a;
+  color: rgba(255, 255, 255, 0.87);
+  text-indent: 48px;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.4);
+}
+
+.block {
+  margin: 16px;
+  padding: 24px;
+  border-radius: 8px / 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#messages-container {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 4px 0px;
+}
+
+.error {
+  color: red;
+}
+
+.warning {
+  color: orange;
+}
+
+.success {
+  color: green;
+}
+
+.field-container {
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  align-items: center;
+}
+
+.field-container label {
+  min-width: 160px;
+}
+
+.field-container .input {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+.field-container .input .field {
+  padding: 0px 4px;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #49599a;
+  background: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.field-container .input .button {
+  margin-left: 4px;
+}
+
+.button {
+  min-width: 100px;
+  border-radius: 4px / 4px;
+  background: #49599a;
+  color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.button:hover, .button:focus {
+  background: #5163aa;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  background: #43528e;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.main-button {
+  margin: auto;
+  min-width: 200px;
+  min-height: 40px;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.popup-container {
+  min-width: 400px;
+  width: 70%;
+  margin: auto;
+  border-radius: 8px / 8px;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
+  background: rgb(252, 252, 252);
+  overflow: hidden;
+}
+
+.popup-container .title {
+  padding: 8px 0px;
+  margin: 0;
+}
+
+.popup-container .popup-content {
+  padding: 16px 24px;
+}
+
+progress {
+  width: 100%;
+}

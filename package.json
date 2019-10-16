@@ -1,0 +1,26 @@
+{
+  "name": "unity-git-initializer",
+  "version": "1.0.0",
+  "description": "Use this tool to initialize an Unity project that uses Git.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . \"Unity Git Initializer\" --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/DaCookie-talks/muug801.git"
+  },
+  "author": "Hubert GROSSIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/DaCookie-talks/muug801/issues"
+  },
+  "homepage": "https://gitlab.com/DaCookie-talks/muug801#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^6.0.9",
+    "electron-packager": "^14.0.6"
+  }
+}

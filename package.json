@@ -20,7 +20,7 @@
   "homepage": "https://gitlab.com/DaCookie-talks/muug801#readme",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^6.0.9",
+    "electron": "^15.5.5",
     "electron-packager": "^14.0.6"
   }
 }
